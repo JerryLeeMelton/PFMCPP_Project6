@@ -67,10 +67,11 @@ struct T
     int value;                //2
     std::string name;         //3
 
-    T(int v, const char* n)   //1
+    T(int v, const char* n) :   //1
+    value(v), 
+    name(n)
     {
-        this->value = v;
-        this->name = n;
+
     }
 };
 
